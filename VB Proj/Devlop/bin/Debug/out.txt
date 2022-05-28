@@ -1,0 +1,91 @@
+Imports System
+Imports System.Drawing
+Imports System.Windows.Forms
+Imports System.Data
+Imports System.Collections
+Imports System.Collections.Generic
+Imports Microsoft.VisualBasic
+
+Public Class Program
+Public Shared Sub Main(ByVal commandLineArgs as String())
+        
+        Application.SetCompatibleTextRenderingDefault(False)
+        Application.EnableVisualStyles()
+        Application.Run(New Blank)
+End Sub
+
+End Class
+Public Class Blank
+    Inherits System.Windows.Forms.Form
+    Sub New()
+        'MyBase.New()
+        InitializeComponent()
+    End Sub
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+    Private components As System.ComponentModel.IContainer
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        
+        ' Create Instances
+
+        Me.MainMenu1 = New MainMenu()
+        Me.Button1 = New System.Windows.Forms.Button()
+
+
+        Me.SuspendLayout()
+
+        ' Blank
+
+        Me.AllowDrop = True
+        Me.ClientSize = New System.Drawing.Size(331, 327)
+        Me.Height = 366
+        Me.Left = 10
+        Me.Location = New System.Drawing.Point(10, 10)
+        Me.Name = "Blank"
+        Me.Size = New System.Drawing.Size(347, 366)
+        Me.Text = "Blank"
+        Me.Top = 10
+        Me.Width = 347
+
+        ' MainMenu1
+
+
+        ' Button1
+
+        Me.Button1.ClientSize = New System.Drawing.Size(75, 23)
+        Me.Button1.Height = 23
+        Me.Button1.Left = 34
+        Me.Button1.Location = New System.Drawing.Point(34, 140)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Button1"
+        Me.Button1.Top = 140
+        Me.Button1.Width = 75
+        Me.Controls.Add(Button1)
+
+    End Sub
+    WithEvents Friend MainMenu1 As MainMenu
+    WithEvents Friend Button1 As System.Windows.Forms.Button
+
+
+End Class
+Partial Class Blank
+    
+
+Private Sub Button1_Click(sender As Button, e As MouseEventArgs) Handles Button1.Click
+
+msgbox("Hello")
+
+End Sub
+
+End Class
+

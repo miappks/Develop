@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MiappksCommon
+</name>
+</assembly>
+<members>
+<member name="T:MiappksCommon.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:MiappksCommon.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:MiappksCommon.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:MiappksCommon.EmbeddedAssembly.Load(System.String,System.String)">
+ <summary>
+ Loading Embedded Assembly into Dictionary to Get it with .Get()
+ </summary>
+ <param name="embeddedResource">z.B. MyDLLName.EmbeddedFilename.dll</param>
+ <param name="fileName">z.B. EmbeddedFilename.dll</param>
+</member>
+<member name="M:MiappksCommon.EmbeddedAssembly.Get(System.String)">
+ <summary>
+ Get a DLL which is loaded first
+ </summary>
+ <param name="assemblyFullName"></param>
+ <returns></returns>
+</member>
+<member name="T:MiappksCommon.QTHelper">
+ <summary>
+ QTHelper GetParams wandelt EingabeParameter ByVal params as Object in einen typensicheren Eingabewert um
+ </summary>
+</member>
+<member name="T:MiappksCommon.QTParams">
+ <summary>
+ Eingabeparameter einer Function
+ </summary>
+</member>
+</members>
+</doc>

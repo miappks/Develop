@@ -1,0 +1,155 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Develop
+</name>
+</assembly>
+<members>
+<member name="T:Develop.My.Resources.Resources">
+<summary>
+  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+</summary>
+</member>
+<member name="P:Develop.My.Resources.Resources.ResourceManager">
+<summary>
+  Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+</summary>
+</member>
+<member name="P:Develop.My.Resources.Resources.Culture">
+<summary>
+  Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+  Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+</summary>
+</member>
+<member name="T:Develop.AboutBox">
+ <summary>
+ About dialog of the program.
+ </summary>
+</member>
+<member name="T:Develop.Core.ControlCreater">
+ <summary>
+ Static class to create controls by type name.
+ </summary>
+</member>
+<member name="M:Develop.Core.ControlCreater.CreatControlToContainer(System.String,System.Windows.Forms.Control,System.Drawing.Point)">
+ <summary>
+ Create a contol of given type to the given container.
+ </summary>
+ <param name="str">The type string of the control to create. </param>
+ <param name="cont">The container which the control will create to. </param>
+ <returns>The created control. </returns>
+ <exception cref="T:System.NotSupportedException"/>
+</member>
+<member name="M:Develop.Core.ControlCreater.CreateControl(System.String)">
+ <summary>
+ Create a contol of given type.
+ </summary>
+ <param name="str">The type string of the control to create. </param>
+ <returns>The created control. </returns>
+ <exception cref="T:System.NotSupportedException"/>
+</member>
+<member name="T:Develop.Core.CodeCompiler">
+ <summary>
+ Compiles the whole generated source code.
+ </summary>
+</member>
+<member name="T:Develop.Core.DragSupporter">
+ <summary>
+ Class to enable dragging of controls.
+ </summary>
+</member>
+<member name="T:Develop.Core.XmlLoader">
+ <summary>
+ Reads a Xml project file to the manager.
+ </summary>
+</member>
+<member name="T:Develop.Core.XmlSaver">
+ <summary>
+ Writes the project to a Xml file.
+ </summary>
+</member>
+<member name="T:Develop.Core.Manager">
+ <summary>
+ The main manager of designer interface.
+ </summary>
+</member>
+<member name="T:Develop.Core.CodeGenerator">
+ <summary>
+ Genenrates code to compile from design manager.
+ </summary>
+</member>
+<member name="T:Develop.Core.SizeSupporter">
+ <summary>
+ Class to enable sizing of controls.
+ </summary>
+</member>
+<member name="T:Develop.DialogError">
+ <summary>
+ Form to display compile errors.
+ </summary>
+</member>
+<member name="T:Develop.Editing.LoadingDialog">
+ <summary>
+ Form to display loading status.
+ </summary>
+</member>
+<member name="T:Develop.Editing.AutoFinish">
+ <summary>
+ Class to enable simple Auto-Finishing for SEditor
+ </summary>
+</member>
+<member name="T:Develop.Editing.TypeResolver">
+ <summary>
+ Class to identify a name to a type.
+ </summary>
+</member>
+<member name="M:Develop.Editing.TypeResolver.LoadAssembly(System.Type)">
+ <summary>
+ Loads an assembly to build database later.
+ </summary>
+ <param name="t">The assembly to load</param>
+</member>
+<member name="M:Develop.Editing.TypeResolver.BuildList">
+ <summary>
+ Builds the database after loading assemblies.
+ </summary>
+</member>
+<member name="M:Develop.Editing.TypeResolver.ResolveNamespace(System.String)">
+ <summary>
+ Resolves a name to a namespace containing members.
+ </summary>
+ <param name="name">The name to resolve, like "IO" or "System.IO"</param>
+ <returns>List of namespace members</returns>
+</member>
+<member name="M:Develop.Editing.TypeResolver.ResolveType(System.String)">
+ <summary>
+ Resolves a name to a type.
+ </summary>
+ <param name="name">
+ The name to resolve, like "System.String" or just "String"
+ </param>
+ <returns>The resolved type as a SpaceMember</returns>
+</member>
+<member name="T:Develop.Editing.Keywords">
+ <summary>
+ Static class containing the highlighting rules.
+ </summary>
+</member>
+<member name="T:Develop.FormMain">
+ <summary>
+ The main UI for the program.
+ </summary>
+</member>
+<member name="T:Develop.ProjectSettings">
+ <summary>
+ Form to edit project settings.
+ </summary>
+</member>
+<member name="T:Develop.Splash">
+ <summary>
+ The main enterance of the program.
+ </summary>
+</member>
+</members>
+</doc>
